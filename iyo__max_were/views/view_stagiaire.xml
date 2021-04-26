@@ -1,0 +1,33 @@
+<odoo>
+    <data noupdate="1">
+        
+        <!-- iyo__max_were.stagiaire tree view -->
+        <record id="model_stagiaire_view_tree" model="ir.ui.view">
+            <field name="name">iyo__max_were.stagiaire.view.tree</field>
+            <field name="model">iyo__max_were.stagiaire</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="id"/>
+                    <field name="prenom"/>
+                    <field name="name"/>
+                    <field name="date_naiss"/>
+                    <field name="adresse"/>
+                    <field name="tele"/>
+                    <field name="sexe"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- iyo__max_were.persson action window -->
+        <record id="model_name_action_stagiaire" model="ir.actions.act_window">
+            <field name="name">iyo__max_were.stagiaire.action</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">iyo__max_were.stagiaire</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+
+    </data>
+</odoo>

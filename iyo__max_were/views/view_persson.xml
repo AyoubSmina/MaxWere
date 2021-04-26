@@ -1,0 +1,30 @@
+<odoo>
+    <data>
+        <!-- iyo__max_were.persson tree view -->
+        <record id="model_name_view_tree" model="ir.ui.view">
+            <field name="name">iyo__max_were.persson.view.tree</field>
+            <field name="model">iyo__max_were.persson</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <!-- Add your fields here -->
+                    <field name="id"/>
+                    <field name="prenom"/>
+                    <field name="name"/>
+                    <field name="date_naiss"/>
+                    <field name="adresse"/>
+                    <field name="tele"/>
+                    <field name="sexe"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- iyo__max_were.persson action window -->
+        <record id="model_name_action_persson" model="ir.actions.act_window">
+            <field name="name">iyo__max_were.persson.action</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">iyo__max_were.persson</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

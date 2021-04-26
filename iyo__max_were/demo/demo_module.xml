@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="object0" model="iyo__max_were.module">
+            <field name="name">Fr</field> 
+            <field name="masse_H">1.5</field>
+            <field name="n_max_Stagiaire">20</field>
+            <field name="prix">500</field>
+        </record>
+
+        <record id="object1" model="iyo__max_were.module">
+            <field name="name">En</field> 
+            <field name="masse_H">2</field>
+            <field name="n_max_Stagiaire">15</field>
+            <field name="prix">600</field>
+        </record>
+
+        <record id="object2" model="iyo__max_were.module">
+            <field name="name">Ar</field> 
+            <field name="masse_H">1.5</field>
+            <field name="n_max_Stagiaire">10</field>
+            <field name="prix">800</field>
+        </record>
+    </data>
+</odoo>

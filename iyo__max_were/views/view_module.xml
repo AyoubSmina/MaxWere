@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <!-- iyo__max_were.module tree view -->
+        <record id="model_module_view_tree" model="ir.ui.view">
+            <field name="name">iyo__max_were.module.view.tree</field>
+            <field name="model">iyo__max_were.module</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="id"/>
+                    <field name="name"/>
+                    <field name="masse_H"/>
+                    <field name="n_max_Stagiaire"/>
+                    <field name="prix"/>
+                    <field name="create_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- iyo__max_were.module action window -->
+        <record id="model_name_action_module" model="ir.actions.act_window">
+            <field name="name">iyo__max_were.module.action</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">iyo__max_were.module</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+    </data>
+</odoo>

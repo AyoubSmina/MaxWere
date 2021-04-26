@@ -1,0 +1,137 @@
+<odoo>
+    <data>
+        <!-- iyo__max_were.formateur tree view -->
+        <record id="model_formateur_view_tree" model="ir.ui.view">
+            <field name="name">iyo__max_were.formateur.view.tree</field>
+            <field name="model">iyo__max_were.formateur</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="id"/>
+                    <field name="cin"/>
+                    <field name="prenom"/>
+                    <field name="name"/>
+                    <field name="date_naiss"/>
+                    <field name="adresse"/>
+                    <field name="tele"/>
+                    <field name="sexe"/>
+                    <field name="module"/>
+                </tree>
+            </field>
+        </record>
+        <!-- iyo__max_were.formateur form view -->
+        <record id="model_formateur_view_form" model="ir.ui.view">
+            <field name="name">iyo__max_were.formateur.view.form</field>
+            <field name="model">iyo__max_were.formateur</field>
+            <field name="arch" type="xml">
+                <form>                    
+                    <sheet>
+                        <group>
+                            <group>
+                                    <field name="name"/>
+                                    <field name="prenom"/>
+                                </group>
+                                <group style="width:300px;">
+                                    <field name="image" widget="image" />
+                                </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="cin"/>
+                                <field name="tele"/>
+                            </group>
+                            <group>
+                                <field name="date_naiss"/>
+                                <field name="sexe"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="adresse"/>
+                            <field name="module"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- iyo__max_were.formateur bandan view -->
+        <record id="model_formateur_view_kanban" model="ir.ui.view">
+            <field name="name">iyo__max_were.formateur.view.kanban</field>
+            <field name="model">iyo__max_were.formateur</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div  t-attf-class="oe_kanban_card  oe_kanban_global_click">
+                                <table >
+                                    <tr style="padding-left:0px;">
+                                        <td style="width: 35%;"><field name="image" widget="image"/></td>
+                                        <td style="width: 75%;padding-left:0px;">
+                                            <ul style="list-style: none;">
+                                                <li t-if="record.name.raw_value"><b>Nom: </b><field name="name"/></li>
+                                                <li t-if="record.name.raw_value"><b>Prenom: </b><field name="prenom"/></li>
+                                                <li t-if="record.name.raw_value"><b>Tele: </b><field name="tele"/></li>
+                                                <li t-if="record.name.raw_value"><b>CIN : </b><field name="cin"/></li>
+                                                <li t-if="record.name.raw_value">
+                                                    <ul style="list-style: none; color:blue;">
+                                                        <li><field name="module" domain="[('name', '=',name)]"/></li>
+                                                    </ul>    
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+
+        <!-- iyo__max_were.formateur calendar view -->
+        <!-- <record id="model_name_view_calendar" model="ir.ui.view">
+            <field name="name">iyo__max_were.formateur.view.calendar</field>
+            <field name="model">iyo__max_were.formateur</field>
+            <field name="arch" type="xml">
+                <calendar string="Calendar Description" mode="month" date_start="date_naiss" date_stop="date_naiss" >
+                     
+                </calendar>
+            </field>
+        </record> -->
+
+        <!-- iyo__max_were.formateur action window -->
+        <record id="model_name_action_formateur"  model="ir.actions.act_window">
+            <field name="name">iyo__max_were.formateur.action</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">iyo__max_were.formateur</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+    </data>
+</odoo>
+
+<!-- 
+<?xml version="1.0"?> <calendar string="Meetings" date_start="start" date_stop="stop" date_delay="duration" all_day="allday" display="[name] - [categ_ids.name]" color="color_partner_id" attendee="partner_ids" avatar_model="res.partner" mode="day" use_contacts="True" event_open_popup="271"> 
+    <field name="name"/> <field name="user_id"/> 
+    <field name="color_partner_id"/> <field name="partner_ids"/> 
+    <field name="categ_ids" widget="many2many_tags_name"/> 
+</calendar>
+    
+ -->
+
+<!-- 
+<calendar string="Meetings" date_start="start" date_stop="stop" date_delay="duration" all_day="allday" display="[name]" color="color_partner_id" attendee="partner_ids" avatar_model="res.partner" use_contacts="True" event_open_popup="347">
+
+                <field name="name"/>
+
+                <field name="user_id"/>
+
+                <field name="color_partner_id"/>
+
+                <field name="partner_ids"/>
+
+            </calendar>
+
+ -->
+
+
+<!-- <field name="view_type">form</field>
+<field name="view_mode">kanban,tree,form,calendar</field> -->

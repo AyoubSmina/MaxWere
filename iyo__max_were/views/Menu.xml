@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+    <menuitem id="iyo_menu_root" name="MaxWere" sequence="-1" />
+    <menuitem id="menu_stagiaire_menu_act" name="Gestion de Stagiaire" parent="iyo_menu_root" sequence="1"/>
+      <!-- This Menu Item must have a parent and an action -->
+      <menuitem id="inscription_menu_act" name="les inscriptions" parent="menu_stagiaire_menu_act" action="model_inscription_action" sequence="1"/>
+      <menuitem id="stagiaire_menu_act" name="les stagiaires" parent="menu_stagiaire_menu_act" action="model_name_action_stagiaire" sequence="2"/>
+
+    <menuitem id="seance_menu_act" name="Gestion de Seance" parent="iyo_menu_root" action="model_name_action_seance" sequence="2"/>
+    <menuitem id="my_module_menu_act" name="Gestion de Module" parent="iyo_menu_root" action="model_name_action_module" sequence="3"/>
+    <menuitem id="formateur_menu_act" name="Gestion de Formateur" parent="iyo_menu_root" action="model_name_action_formateur" sequence="4"/>
+    
+  </data>
+</odoo>

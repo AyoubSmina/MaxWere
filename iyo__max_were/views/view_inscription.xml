@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+        <!-- iyo__max_were.inscription tree view -->
+        <record id="model_inscription_view_tree" model="ir.ui.view">
+            <field name="name">iyo__max_were.inscription.view.tree</field>
+            <field name="model">iyo__max_were.inscription</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="stagiaire"/>
+                    <field name="modules"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+
+        <!-- iyo__max_were.inscription action window -->
+        <record id="model_inscription_action" model="ir.actions.act_window">
+            <field name="name">iyo__max_were.inscription.action</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">iyo__max_were.inscription</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+
+    </data>
+</odoo>

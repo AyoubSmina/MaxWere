@@ -1,0 +1,33 @@
+*{
+    list-style: none;
+    height: 50%;width:50%;
+    padding: 0% auto;
+    border: 1px solid black;
+}
+# def _get_module_by_id_formateur(self):
+    #     lst =[('s','s')]
+    #     res = []
+    #     lst = self.env['iyo__max_were.module'].search([('id',"=",'2')])
+    #     for n in lst:
+    #         res.append((n.name, n.name))
+    #     return res
+    
+    # id_module = fields.Selection(_get_module_by_id_formateur,string='Module')
+    
+    
+    # id_module = fields.Many2many(related='iyo__max_were.module')
+
+      
+
+    # @api.onchange('id_formateur')
+    # def _onchange_id_formateur(self):
+        # self.name = type(self.id_formateur.module)
+        # self.name = self.id_formateur.module
+        # if self.name !='':
+        
+        
+    # id_module = fields.Selection(string='Module de formateur', selection=[('', ''), ('', ''),])
+    
+    # id_module = fields.Many2one(comodel_name='iyo__max_were.module', string='Module')
+    # ,domain=[(self.id_module.id, 'in', self.id_formateur.module.id)]
+    

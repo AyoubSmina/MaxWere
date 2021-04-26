@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_iyo__max_were_persson,iyo__max_were.persson,model_iyo__max_were_persson,base.group_user,1,1,1,1
+access_iyo__max_were_stagiaire,iyo__max_were.stagiaire,model_iyo__max_were_stagiaire,base.group_user,1,1,1,1
+access_iyo__max_were_formateur,iyo__max_were.formateur,model_iyo__max_were_formateur,base.group_user,1,1,1,1
+access_iyo__max_were_seance,iyo__max_were.seance,model_iyo__max_were_seance,base.group_user,1,1,1,1
+access_iyo__max_were_module,iyo__max_were.module,model_iyo__max_were_module,base.group_user,1,1,1,1
+access_iyo__max_were_inscription,iyo__max_were.inscription,model_iyo__max_were_inscription,base.group_user,1,1,1,1
