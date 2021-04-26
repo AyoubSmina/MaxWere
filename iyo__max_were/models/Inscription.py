@@ -5,4 +5,5 @@ class Inscription(models.Model):
     
     stagiaire = fields.Many2one(comodel_name='iyo__max_were.stagiaire', string='stagiaire')
     modules = fields.Many2many(comodel_name='iyo__max_were.module', string='modules')
+    _sql_constraints = [('UQ_stagiaire', 'unique(stagiaire)', 'Ce Stagiaire déjà inscrire!'),]
     
