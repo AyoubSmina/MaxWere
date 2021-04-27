@@ -18,14 +18,37 @@
             </field>
         </record>
 
+        <!-- iyo__max_were.stagiaire kanban view -->
+        <record id="model_name_view_kanban" model="ir.ui.view">
+            <field name="name">iyo__max_were.stagiaire.view.kanban</field>
+            <field name="model">iyo__max_were.stagiaire</field>
+            <field name="arch" type="xml">
+                <kanban string="Kanban Description">
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div  t-attf-class="oe_kanban_card  oe_kanban_global_click">
+                                <ul style="list-style: none;">
+                                    <li t-if="record.name.raw_value"><b>Nom: </b><field name="name"/></li>
+                                    <li t-if="record.name.raw_value"><b>Prenom: </b><field name="prenom"/></li>
+                                    <li t-if="record.name.raw_value"><b>Tele: </b><field name="tele"/></li>
+                                    <li t-if="record.name.raw_value"><b>Adresse: </b><field name="adresse"/></li>
+                                </ul>            
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
 
         <!-- iyo__max_were.persson action window -->
         <record id="model_name_action_stagiaire" model="ir.actions.act_window">
             <field name="name">iyo__max_were.stagiaire.action</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">iyo__max_were.stagiaire</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,kanban</field>
         </record>
+
 
 
 

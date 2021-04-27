@@ -31,3 +31,9 @@
     # id_module = fields.Many2one(comodel_name='iyo__max_were.module', string='Module')
     # ,domain=[(self.id_module.id, 'in', self.id_formateur.module.id)]
     
+    type_prefix = fields.Many2one('exchange.account.type',
+    'Account Type Prefix', related='template_id.type_prefix',
+     readonly=True)
+currency_base = fields.Many2one('res.currency'
+    'Currency', related='template_id.currency_id',
+     readonly=True)
