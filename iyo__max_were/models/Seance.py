@@ -8,4 +8,4 @@ class Seance(models.Model):
     date_fin = fields.Datetime(string='Date Fin')
     
     id_formateur = fields.Many2one(comodel_name='iyo__max_were.formateur', string='Formateur')
-    id_module = fields.Many2many(comodel_name='iyo__max_were.module', string='module')
+    id_module = fields.Many2one(comodel_name='iyo__max_were.module', string='module')

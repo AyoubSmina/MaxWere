@@ -2,7 +2,7 @@
     <data>
         <!-- iyo__max_were.formateur tree view -->
         <record id="model_formateur_view_tree" model="ir.ui.view">
-            <field name="name">iyo__max_were.formateur.view.tree</field>
+            <field name="name">Formateur</field>
             <field name="model">iyo__max_were.formateur</field>
             <field name="arch" type="xml">
                 <tree>
@@ -20,7 +20,7 @@
         </record>
         <!-- iyo__max_were.formateur form view -->
         <record id="model_formateur_view_form" model="ir.ui.view">
-            <field name="name">iyo__max_were.formateur.view.form</field>
+            <field name="name">Formateur</field>
             <field name="model">iyo__max_were.formateur</field>
             <field name="arch" type="xml">
                 <form>                    
@@ -54,7 +54,7 @@
         </record>
         <!-- iyo__max_were.formateur bandan view -->
         <record id="model_formateur_view_kanban" model="ir.ui.view">
-            <field name="name">iyo__max_were.formateur.view.kanban</field>
+            <field name="name">Formateur</field>
             <field name="model">iyo__max_were.formateur</field>
             <field name="arch" type="xml">
                 <kanban>
@@ -63,15 +63,15 @@
                             <div  t-attf-class="oe_kanban_card  oe_kanban_global_click">
                                 <table >
                                     <tr style="padding-left:0px;">
-                                        <td style="width: 35%;"><field name="image" widget="image"/></td>
-                                        <td style="width: 75%;padding-left:0px;">
-                                            <ul style="list-style: none;">
+                                        <td style="width: 26%;"><field name="image" widget="image"/></td>
+                                        <td style="width: 84%;padding-left:0px;">
+                                            <ul style="list-style: none;font-family: 'Source Sans Pro', sans-serif;">
                                                 <li t-if="record.name.raw_value"><b>Nom: </b><field name="name"/></li>
-                                                <li t-if="record.name.raw_value"><b>Prenom: </b><field name="prenom"/></li>
+                                                <li t-if="record.name.raw_value"><b>Prenom: </b><field name="prenom" /></li>
                                                 <li t-if="record.name.raw_value"><b>Tele: </b><field name="tele"/></li>
                                                 <li t-if="record.name.raw_value"><b>CIN : </b><field name="cin"/></li>
                                                 <li t-if="record.name.raw_value">
-                                                    <ul style="list-style: none; color:blue;">
+                                                    <ul style="list-style: none; color:#ff6d00;">
                                                         <li><field name="module" domain="[('name', '=',name)]"/></li>
                                                     </ul>    
                                                 </li>
@@ -100,7 +100,7 @@
 
         <!-- iyo__max_were.formateur action window -->
         <record id="model_name_action_formateur"  model="ir.actions.act_window">
-            <field name="name">iyo__max_were.formateur.action</field>
+            <field name="name">Formateur</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">iyo__max_were.formateur</field>
             <field name="view_mode">kanban,tree,form</field>

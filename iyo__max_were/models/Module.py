@@ -7,6 +7,7 @@ class Module(models.Model):
     masse_H = fields.Float(string='Nembre d`heurs',required=True)    
     n_max_Stagiaire = fields.Integer(string='Numbre max de stagiaire',required=True)
     prix = fields.Float(string='Prix',required=True)
-
+    
+    
     _sql_constraints = [('UQ_module', 'unique(name,prix)', 'Ce module déjà existe'),]
     # ,masse_H,prix

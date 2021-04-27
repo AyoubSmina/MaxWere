@@ -3,7 +3,7 @@
         
         <!-- iyo__max_were.stagiaire tree view -->
         <record id="model_stagiaire_view_tree" model="ir.ui.view">
-            <field name="name">iyo__max_were.stagiaire.view.tree</field>
+            <field name="name">Stagiaire</field>
             <field name="model">iyo__max_were.stagiaire</field>
             <field name="arch" type="xml">
                 <tree>
@@ -18,8 +18,38 @@
             </field>
         </record>
 
+        <!-- iyo__max_were.stagiaire form view -->
+        <record id="model_name_view_form" model="ir.ui.view">
+            <field name="name">Stagiaire</field>
+            <field name="model">iyo__max_were.stagiaire</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <group>
+                                    <field name="name"/>
+                                    <field name="prenom"/>
+                                </group>
+                                <group >
+                                </group>
+                        </group>
+                        <group>
+                            <group>
+                                <!-- <field name="cin"/> -->
+                                <field name="tele"/>
+                                <field name="date_naiss"/>
+                            </group>
+                            <group>
+                                <field name="sexe"/>
+                                <field name="adresse"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
         <!-- iyo__max_were.stagiaire kanban view -->
-        <record id="model_name_view_kanban" model="ir.ui.view">
+        <!-- <record id="model_name_view_kanban" model="ir.ui.view">
             <field name="name">iyo__max_were.stagiaire.view.kanban</field>
             <field name="model">iyo__max_were.stagiaire</field>
             <field name="arch" type="xml">
@@ -38,15 +68,15 @@
                     </templates>
                 </kanban>
             </field>
-        </record>
+        </record> -->
 
 
         <!-- iyo__max_were.persson action window -->
         <record id="model_name_action_stagiaire" model="ir.actions.act_window">
-            <field name="name">iyo__max_were.stagiaire.action</field>
+            <field name="name">Stagiaire</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">iyo__max_were.stagiaire</field>
-            <field name="view_mode">tree,form,kanban</field>
+            <field name="view_mode">tree,form</field>
         </record>
 
 

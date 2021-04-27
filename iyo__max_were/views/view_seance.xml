@@ -2,7 +2,7 @@
     <data>
         <!-- iyo__max_were.seance tree view -->
         <record id="model_name_view_tree" model="ir.ui.view">
-            <field name="name">iyo__max_were.seance.view.tree</field>
+            <field name="name">Seance</field>
             <field name="model">iyo__max_were.seance</field>
             <field name="arch" type="xml">
                 <tree>
@@ -17,7 +17,7 @@
 
         <!-- iyo__max_were.seance form view -->
         <record id="model_name_view_form" model="ir.ui.view">
-            <field name="name">iyo__max_were.seance.view.form</field>
+            <field name="name">Seance</field>
             <field name="model">iyo__max_were.seance</field>
             <field name="arch" type="xml">
                 <form string="">
@@ -39,7 +39,7 @@
         </record>
         <!-- iyo__max_were.seance calendar view -->
         <record id="model_name_view_calendar" model="ir.ui.view">
-            <field name="name">iyo__max_were.seance.view.calendar</field>
+            <field name="name">Seance</field>
             <field name="model">iyo__max_were.seance</field>
             <field name="arch" type="xml">
                 <calendar string="Calendar Description" date_start="date_debut" date_stop="date_fin" mode="month">
@@ -51,10 +51,10 @@
 
         <!-- iyo__max_were.seance action window -->
         <record id="model_name_action_seance" model="ir.actions.act_window">
-            <field name="name">iyo__max_were.seance.action</field>
+            <field name="name">Seance</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">iyo__max_were.seance</field>
-            <field name="view_mode">tree,form,calendar</field>
+            <field name="view_mode">calendar,tree,form</field>
         </record>
         
     </data>

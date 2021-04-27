@@ -2,7 +2,7 @@
     <data>
         <!-- iyo__max_were.inscription tree view -->
         <record id="model_inscription_view_tree" model="ir.ui.view">
-            <field name="name">iyo__max_were.inscription.view.tree</field>
+            <field name="name">Inscription</field>
             <field name="model">iyo__max_were.inscription</field>
             <field name="arch" type="xml">
                 <tree>
@@ -15,7 +15,7 @@
 
         <!-- iyo__max_were.inscription kanban view -->
         <record id="model_name_view_kanban" model="ir.ui.view">
-            <field name="name">iyo__max_were.inscription.view.kanban</field>
+            <field name="name">Inscription</field>
             <field name="model">iyo__max_were.inscription</field>
             <field name="arch" type="xml">
                 <kanban string="Kanban Description">
@@ -41,10 +41,10 @@
 
         <!-- iyo__max_were.inscription action window -->
         <record id="model_inscription_action" model="ir.actions.act_window">
-            <field name="name">iyo__max_were.inscription.action</field>
+            <field name="name">Inscription</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">iyo__max_were.inscription</field>
-            <field name="view_mode">tree,form,kanban</field>
+            <field name="view_mode">kanban,tree,form</field>
         </record>
 
 

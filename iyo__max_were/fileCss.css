@@ -3,6 +3,7 @@
     height: 50%;width:50%;
     padding: 0% auto;
     border: 1px solid black;
+    font-family: 'Source Sans Pro';
 }
 # def _get_module_by_id_formateur(self):
     #     lst =[('s','s')]
