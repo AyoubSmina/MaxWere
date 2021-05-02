@@ -1,6 +1,6 @@
 <odoo>
   <data>
-    <menuitem id="iyo_menu_root" name="MaxWere" sequence="-1" />
+    <menuitem id="iyo_menu_root" name="MaxWere" sequence="-1" web_icon="iyo_MaxWere,static/src/img/icon.jpg"/>
     <menuitem id="menu_stagiaire_menu_act" name="Stagiaire" parent="iyo_menu_root" sequence="1"/>
       <!-- This Menu Item must have a parent and an action -->
       <menuitem id="inscription_menu_act" name="Inscriptions" parent="menu_stagiaire_menu_act" action="model_inscription_action" sequence="1"/>

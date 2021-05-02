@@ -35,7 +35,4 @@
         'views/Menu.xml',
                
     ],
-    'demo': [
-        'demo/demo_module.xml',
-    ],
 }

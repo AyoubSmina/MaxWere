@@ -19,20 +19,20 @@
             <field name="model">iyo__max_were.inscription</field>
             <field name="arch" type="xml">
                 <kanban string="Kanban Description">
-                    <templates>
-                        <t t-name="kanban-box">
-                            <div  t-attf-class="oe_kanban_card  oe_kanban_global_click">
-                                <ul style="list-style: none;">
-                                    <li t-if="record.name.raw_value"><b>Nom: </b><field name="name"/></li>
-                                    <li t-if="record.name.raw_value"><b>Prenom: </b><field name="prenom"/></li>
-                                    <li t-if="record.name.raw_value"><b>Tele: </b><field name="tele"/></li>
-                                    <li t-if="record.name.raw_value">
-                                        <ul style="list-style: none; color:green;">
-                                            <li><field name="modules" domain="[('name', '=',name)]"/></li>
-                                        </ul>    
-                                    </li>
-                                </ul>
-                            </div>
+                    <templates >
+                        <t t-name="kanban-box" >
+                            <div  t-attf-class=" oe_kanban_global_click">
+                                    <ul style="list-style: none;">
+                                        <li t-if="record.name.raw_value"><b>Nom: </b><field name="name"/></li>
+                                        <li t-if="record.name.raw_value"><b>Prenom: </b><field name="prenom"/></li>
+                                        <li t-if="record.name.raw_value"><b>Tele: </b><field name="tele"/></li>
+                                        <li t-if="record.name.raw_value">
+                                            <ul style="list-style: none; color:green;">
+                                                <li><field name="modules" domain="[('name', '=',name)]"/></li>
+                                            </ul>    
+                                        </li>
+                                    </ul>
+                                </div>  
                         </t>
                     </templates>
                 </kanban>
